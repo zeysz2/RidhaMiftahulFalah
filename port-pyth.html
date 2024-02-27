@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ind">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio SQL - Ridha Miftahul Falah</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="main-header">
+                <div class="nav">
+                    <div class="logo">                
+                        <a href="index.html">Ridha Miftahul Falah</a>
+                    </div>
+                        <nav class="navbar">
+                            <ul>
+                              <li><a class="nvb" href="index.html">Home</a></li> 
+                              <li><a class="nvb" href="index.html#Portfolios">Portfolio</a></li>  
+                              <li><a class="nvb" href="index.html#skills">Skills</a></li>
+                              <li><a class="nvb" href="index.html#contact">Contact</a></li>
+                              <li>
+                                <a href="CV - Ridha Miftahul Falah.pdf" target="_blank">
+                                    <button class="cv-btn">Curriculum Vitae</button>
+                                </a>
+                              </li>  
+                            </ul>
+                        </nav>
+                        <div class="burger">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                        </div>
+                </div>
+                <!-- Portfolio Python -->
+                <section id="text">
+                <div class="port-text">
+                    <h3 class="pre-title">My Portfolio</h3>
+                    <h1 class="name-char">Python for Data Analyst</h1>
+                    <p>
+                        Python merupakan salah satu bahasa pemrograman yang sangat populer dalam dunia analisis data. Hal ini disebabkan oleh beragamnya library dan framework yang 
+                        tersedia dalam ekosistem Python yang memudahkan para data analyst dalam melakukan berbagai tugas analisis data. Salah satu library yang paling populer untuk 
+                        analisis data adalah Pandas, yang menyediakan struktur data seperti DataFrame yang sangat berguna untuk manipulasi data tabular. Selain itu, NumPy digunakan 
+                        untuk komputasi numerik yang efisien, sedangkan Matplotlib dan Seaborn menyediakan alat visualisasi data yang kuat. Untuk analisis statistik, 
+                        SciPy dan StatsModels menyediakan berbagai fungsi dan algoritma statistik. Jupyter Notebook sering digunakan sebagai lingkungan pengembangan interaktif 
+                        yang memungkinkan para data analyst untuk menjalankan kode Python secara bertahap dan membuat catatan atau dokumentasi sepanjang proses analisis. 
+                        Dengan kombinasi alat-alat ini, Python telah menjadi bahasa yang sangat kuat dan populer di kalangan data analyst untuk melakukan berbagai tugas, 
+                        mulai dari pembersihan dan persiapan data hingga visualisasi dan pemodelan statistik.
+                    </p>
+                    &nbsp;
+                    <p>
+                        Kali ini saya akan membahas mengenai final project Python for Data Analyst, dalam project ini saya menggunakan Google Colab,
+                        untuk data menganalisis Data, berikut penjelasan mengenai Datasetnya:
+                    </p>
+                </div>
+                <div class="port-text">
+                    <div class="gambar">
+                    <img src="./Images/Python/dataset.png" alt="Dataset">
+                    <p>1. Dataset Detail</p>
+                    </div>
+                    <p><b>Data Processing</b></p>
+                    <div class="gambar">
+                    <img src="./Images/Python/colab.png" alt="Dataset">
+                    <p>2. Google Colab</p>
+                    </div>
+                    <p>Pengolahan data dilakukan dengan menggunakan platfrom Google Colab untuk dapat menganalisis data dan mengolah datanya,
+                        dalam hal ini kita harus melakukan import data library kedalam Python terdahulu untuk dapat menganalisis data dengan mudah, berikut adalah
+                        coding untuk mengimport datanya: 
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/import.png" alt="Python 1">
+                    <p>3. Import Library Python</p>
+                    </div>
+                    <div class="port-text">
+                    <p>
+                        Jika sudah melakukan import library Python, maka kita akan langsung mengimport data, seperti berikut:
+                    </p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/sumberdata.png" alt="Sumber Data">
+                    <p>4. Import Data</p>
+                    </div>
+
+                    <div class="port-text">
+                    <p>
+                        Setelah selesai mengimport data melalui link yang file extensinya adalah csv, maka sekarang saya akan melakukan
+                        pengecekan apakah data yang telah di import dari link tersebut sudah terbaca atau belum terbaca datanya, data table tersebut
+                        diantaranya terdapat order_detail, sku_detail, customer_detail, dan payment detail, mari kita simak lebih lanjut
+                        sebagai berikut:
+                    </p>
+                    </div>
+                    <!-- Order_Detail-->
+                    <div class="gambar">
+                    <img src="./Images/Python/od.png" alt="order_detail">
+                    <p>5. Data Table Order_Detail</p>
+                    </div>
+                    <!-- Sku_Detail -->
+                    <div class="gambar">
+                    <img src="./Images/Python/hasil_sd.png" alt="Sku_Detail">
+                    <p>6. Data Table Sku_Detail</p>
+                    </div>
+                    <!-- Customer_Detail -->
+                    <div class="gambar">
+                    <img src="./Images/Python/cd.png" alt="Customer_Detail">
+                    <p>7. Data Table Customer_Detail</p>
+                    </div>
+                    <!-- Payment_Detail -->
+                    <div class="gambar">
+                    <img src="./Images/Python/pd.png" alt="Payment_Detail">
+                    <p>8. Data Table Payment_Detail</p>
+                    </div>
+                <!-- Menjalankan SQL di Colab -->
+                <div class="port-text">
+                    <p><strong>Merge Table</strong></p>
+                    <p>
+                        Data yang telah di import dari link tersebut berhasil terbaca tidak ada kendala lainnya, Kemudian
+                        selanjutnya saya akan menjalankan SQL di google colab ini, bertujuan untuk menggabungkan data dari masing-masing table 
+                        tersebut, sebagai berikut:
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/sql-connect.png" alt="Connect to SQL">
+                    <p>9. Menjalankan SQL di Google Colab</p>
+                    </div>
+                    <p>Setelah berhasil terhubung, saya akan membuat query untuk menggabungkan tablenya.</p>
+                    <div class="gambar">
+                    <img src="./Images/Python/jointable.png" alt="Join Table">
+                    <p>10. Query JOIN Table</p>
+                    </div>
+                    <p>Setelah berhasil untuk menggabungkan table dengan menggunakan SQL Join, sebaiknya kita mengeceknya terlebih dahulu apakah sudah berhasil
+                        penggabungan table tersebut.
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/hasiljoin.png" alt="Join Table">
+                    <p>11. Hasil dari Merge/Join Table</p>
+                    </div>
+                    <!-- Mengubah Tipe Data -->
+                    <p><strong>Ubah Tipe Data</strong></p>
+                    <p>Join/Merge Table telah berhasil maka saya akan melanjutkannya kedalam tahap selanjutnya, yaitu untuk mengubah
+                        tipe data dari before_discount, discount_amount, after_discount, dan base_price menjadi integer, agar mudah untuk
+                        dilakukannya pengolahan data.
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/ubahtipedata.png" alt="Tipe Data">
+                    <p>12. Pengubahan Tipe Data</p>
+                    </div>
+                    <p>Setelah saya berhasil mengubah tipe data yang harus diubah, kemudian saya ingin melakukan pengubahan lagi untuk mengubah
+                        tipe kolom date menjadi Datetime, sebagai berikut:
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/datetime.png" alt="Date to Datetime">
+                    <p>13. Mengubah Tipe Date menjadi Datetime</p>
+                    </div>
+                    <p>Setelah saya melakukan beberapa penggabungan dan pengubahan tipe data dari dataset tersebut, saya akan masuk kedalam
+                        tujuan utama saya yaitu menjawab beberapa pertanyaan/permintaan yang harus saya selesaikan.
+                    </p>
+                    <!-- Questions & Answer -->
+                    <br>
+                    <p><b>
+                        Questions & Answer
+                    </b></p>
+                    <!-- Nomor 1 -->
+                    <p><b>Nomor 1</b></p>
+                       <p> Dear Data Analyst,<br>
+                        Akhir tahun ini, perusahaan akan memberikan hadiah bagi pelanggan yang memenangkan kompetisi Festival Akhir Tahun. Tim Marketing membutuhkan bantuan untuk menentukan perkiraan hadiah yang akan diberikan pada pemenang kompetisi nantinya. Hadiah tersebut akan diambil dari TOP 5 Produk dari Kategori Mobiles & Tablets selama tahun 2022, dengan jumlah kuantitas penjualan (valid = 1) paling tinggi.
+                        Mohon bantuan, untuk mengirimkan data tersebut sebelum akhir bulan ini ke Tim Marketing.<br> Atas bantuan yang diberikan, kami mengucapkan terima kasih.
+                        <br>Regards
+                        <br>Tim Marketing
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/query1.png" alt="Syntax 1">
+                    <p>14. Syntax Nomor 1</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilquery1.png" alt="Hasil Syntax 1">
+                    <p>15. Hasil dari Syntax Nomor 1</p>
+                    </div>
+                    <p>
+                        Hasil dari table tersebut menjelaskan bahwa perusahaan akan memberikan hadiah bagi pelanggan yang memenangkan kompetisi Festival Akhir Tahun,
+                        berdasarkan dari TOP 5 produk dari kategori Mobiles & Tablets, dalam posisi jumlah kuantitas penjualan yang difilter dengan is_valid = 1, yang tertinggi
+                        terdapat nama productnya adalah IDROID_BALRX7-Gold dengan total kuantitas penjualan 1.000, sedangkan yang terendah terdapat infinix_Zero 4-Grey dengan
+                        total kuantitas penjualannya 10. di sort berdasarkan Acending=False yang artinya diambil dari Data yang tertinggi ke yang rendah.
+                    </p>
+                </div>
+                <!-- No 2 -->
+                <div class="port-text">
+                    <p><b>Nomor 2</b></p>
+                    <p>Dear Data Analyst,<br>
+                    Menindaklanjuti meeting gabungan Tim Werehouse dan Tim Marketing, kami menemukan bahwa ketersediaan stock produk dengan Kategori Others pada akhir 2022 kemarin masih banyak.
+                    <br>1. Kami mohon bantuan untuk melakukan pengecekan data penjualan kategori tersebut dengan tahun 2021 secara kuantitas penjualan. Dugaan sementara kami, telah terjadi penurunan kuantitas penjualan pada 2022 dibandingkan 2021. (Mohon juga menampilkan data ke-15 kategori).
+                    <br>2. Apabila memang terjadi penurunan kuantitas penjualan pada kategori Others, kami mohon bantuan untuk menyediakan data TOP 20 nama produk yang mengalami penurunan paling tinggi pada 2022 jika dibanding dengan 2021. Hal ini kami gunakan sebagai bahan diskusi pada meeting selanjutnya.
+                    <br>Mohon bantuan untuk mengirimkan data tersebut paling lambat 4 hari dari hari ini. Atas bantuan yang diberikan, kami mengucapkan terima kasih.
+                    <br>Regards
+                    <br>Tim Werehouse
+                    </p>
+                    <!-- No 2.1 -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/query2-1.png" alt="Syntax 2">
+                    <p>16. Syntax Nomor 2.1</p>
+                    </div>
+
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilquery2-1.png" alt="Hasil Syntax 2">
+                    <p>17. Hasil Syntax Nomor 2.1</p>
+                    </div>
+                    <p>Dari table diatas menunjukan bahwa terdapat 4 kategori dari 15 kategory yang mengalami penurunan jumlah kuantitas penjualan, diantaranya terdapat kategori
+                        Others, Soghaat, Men Fashion, dan Beauty & Grooming. Penurunan jumlah kuantitas penjualan terbesar terdapat pada kategori Others dengan total penurunan 
+                        jumlah kuantitas penjualannya sebesar -163 kuantitas, dan jumlah terendah yang mengalami penurunan jumlah kuantitas penjualan adalah kategori Beauty & Grooming dengan 
+                        total -15 kuantitas.
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/query2-2.png" alt="Syntax 2">
+                    <p>18. Syntax Nomor 2.2</p>
+                    </div>
+
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilquery2-2.png" alt="Hasil Syntax 2">
+                    <p>19. Hasil Syntax Nomor 2.2</p>
+                    </div>
+                    <p>Dari table diatas menunjukan bahwa perbandingan produk dari kategori Others pada tahun 2021 dan 2022 terdapat penurunan yang signifikan terhadap nama produk
+                        RB_Dettol Germ Busting Kit-bf dengan penurunan jumlah pertumbuhannya sebesar -200.0. Kemudian disusul dengan produk Telemall_MM-DR-HB-L deengan penurunan
+                        jumlah pertumbuhannya sebesar -23.0. Sedangkan yang terendah jumlah penurunan jumlah pertumbuhannya adalah produk Tmall_MM-DR-PAD sebesar -2.0.
+                    </p>
+                </div>
+                <!-- No 3 -->
+                <div class="port-text">
+                    <p><b>Nomor 3</b></p>
+                    <p>Dear Data Analyst,<br>
+                    Terkait ulang tahun perusahaan pada 2 bulan mendatang, Tim Digital Marketing akan memberikan informasi promo bagi pelanggan pada akhir bulan ini. Kriteria pelanggan yang akan kami butuhkan adalah mereka yang sudah melakukan check-out namun belum melakukan pembayaran (is_gross = 1) selama tahun 2022. Data yang kami butuhkan adalah ID Customer dan Registered Date.
+                    <br>Mohon bantuan, untuk mengirimkan data tersebut sebelum akhir bulan ini ke Tim Digital Marketing. Atas bantuan yang diberikan, kami mengucapkan terima kasih.
+                    <br>Regards
+                    <br>Tim Digital Marketing
+                    </p>
+
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/query3.png" alt="Syntax 3">
+                    <p>20. Syntax Nomor 3</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilquery3.png" alt="Hasil Syntax 3">
+                    <p>21. Hasil Syntax Nomor 3</p>
+                    </div>
+                    <p>Berdasarkan permintaan Tim Marketting, berikut adalah data customer yang sudah melakukan checkout tetapi belum melakukan pembayaran,
+                        di filter menggunakan is_gross = 1, data dalam table ini berupa ID Customer dan Registered Date customer yang akan digunakan tim Marketting
+                        untuk memberikan informasi terhadap promo baik potongan harga ataupun discount lainnya.
+                    </p>
+                </div>
+                <!-- No 4 -->
+                <div class="port-text">
+                    <p><b>Nomor 4</b></p>
+                    <p>Dear Data Analyst,<br>
+                    Pada bulan October hingga Desember 2022, kami melakukan campaign setiap hari Sabtu dan Minggu. Kami hendak menilai, apakah campaign tersebut cukup berdampak pada kenaikan penjualan (before_discount). Mohon bantuan untuk menampilkan data:
+                    <br>1. Rata-rata harian penjualan weekends (Sabtu dan Minggu) vs rata-rata harian penjualan weekdays (Senin-Jumat) per bulan tersebut. Apakah ada peningkatan penjualan pada masing-masing bulan tersebut.
+                    <br>2. Rata-rata harian penjualan weekends (Sabtu dan Minggu) vs rata-rata harian penjualan weekdays (Senin-Jumat) keseluruhan 3 bulan tersebut.
+                    <br>Mohon bantuan untuk mengirimkan data tersebut paling lambat minggu depan. Atas bantuan yang diberikan, kami mengucapkan terima kasih.
+                    <br>Regards
+                    </p>
+
+                    <!-- HARIAN/Weekends -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/queryweekends.png" alt="Syntax Weekends">
+                    <p>22. Syntax Weekends</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilqueryweekends.png" alt="Hasil Weekends">
+                    <p>23. Hasil Syntax Weekends</p>
+                    </div>
+                    <p>Dari tabel Weekends tersebut adalah rata-rata penjualan harian selama Weekends yaitu hari Sabtu dan Minggu, pada bulan
+                        October, November dan December.
+                    </p>
+
+                    <!-- HARIAN/Weekdays -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/queryweekdays.png" alt="Syntax Weekdays">
+                    <p>24. Syntax Weekdays</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilqueryweekdays.png" alt="Hasil Weekdays">
+                    <p>25. Hasil Syntax Weekdays</p>
+                    </div>
+                    <p>Dari tabel Weekdays tersebut adalah rata-rata penjualan harian selama Weekdays yaitu hari pada hari Senin, Selasa, Rabu, Kamis, dan Jumat, pada bulan
+                        October, November dan December.
+                    </p>
+
+                    <!-- Monthly/Weekends -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/monthlyweekends.png" alt="Syntax Weekends">
+                    <p>26. Syntax Monthly Weekends</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilmonthlyweekends.png" alt="Hasil Weekends">
+                    <p>27. Hasil Syntax Monthly Weekends</p>
+                    </div>
+                    <p>Tabel diatas menunjukkan bahwa dalam total rata-rata penjualan pada hari Weekends dalam Bulan October, November, dan December. Paling besar rata-rata penjualan dalam Weekends ini terdapat
+                        pada bulan November sebesar 5.774.045, kemudian disusul oleh Bulan October sebesar 5.708.341, kemudian yang terendah berada pada bulan December sebesar
+                        4.105.994.
+                    </p>
+
+                    <!-- Monthly/Weekdays -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/monthlyweekdays.png" alt="Syntax Weekdays">
+                    <p>28. Syntax Monthly Weekdays</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilmonthlyweekdays.png" alt="Hasil Weekdays">
+                    <p>29. Hasil Syntax Monthly Weekdays</p>
+                    </div>
+                    <p>Tabel diatas menunjukkan bahwa dalam total rata-rata penjualan pada hari Weekdays dalam Bulan October, November, dan December. Paling besar rata-rata penjualan dalam Weekdays ini terdapat
+                        pada bulan December sebesar 8.542.530, kemudian disusul oleh Bulan October sebesar 7.872.212, kemudian yang terendah berada pada bulan November sebesar
+                        6.204.666.
+                    </p>
+
+                    <!-- Monthly/Weekdays -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/mergeweek.png" alt="Syntax Merge Weeks">
+                    <p>30. Syntax Merge Weeks</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilmergeweek.png" alt="Hasil Merge Weeks">
+                    <p>31. Hasil Syntax Merge Weeks</p>
+                    </div>
+                    <p>Tabel diatas menunjukkan perbandingan antara Rata-rata penjualan Weekends dan Weekdays, dimana pada bulan October, November, dan December tepatnya pada rata-rata penjualan di weekends
+                        lebih rendah dibandingkan weekdays. Perbandingan terbesar antara weekends dan weekdays terdapat pada bulan December, kemudian disusul dengan bulan October, dan yang terendah
+                        perbandingannya terdapat pada bulan November.
+                    </p>
+
+                    <!-- PLOT -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/queryplot.png" alt="Syntax Plot">
+                    <p>32. Syntax Plot</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasilplot.png" alt="Hasil Plot">
+                    <p>33. Hasil Syntax Plot</p>
+                    </div>
+                    <p>
+                        Gambar diatas menunjukkan bahwa pada Rata-Rata Penjualan di Weekends yang tertinggi adalah pada bulan November dan yang terendah terdapat pada bulan
+                        December. Kemudian pada Rata-Rata Penjualan di Weekdays tertinggi terdapat pada bulan December, sedangkan yang terendah terdapat pada bulan November.
+                    </p>
+
+                     <!-- Total 3 Months -->
+                    <div class="gambar">
+                    <img src="./Images/Python/Query/query3month.png" alt="Syntax 3 Months">
+                    <p>34. Syntax Total 3 Month</p>
+                    </div>
+                    <div class="gambar">
+                    <img src="./Images/Python/Hasil/hasil3month.png" alt="Hasil 3 Months">
+                    <p>35. Hasil Syntax Total 3 Month</p>
+                    </div>
+                    <p class="end-text">
+                        Tabel diatas menunjukkan total rata-rata penjualan weekends dan weekdays dari Bulan October, November, dan December. Dari total tersebut dapat kita lihat
+                        bahwa Rata-Rata penjualan Weekdays lebih besar dibandingkan dari Rata-Rata penjualan di Weekends. Perbandingan selama total 3 bulan tersebut
+                        antara weekends dan weekdays dengan Diff (Value) yaitu sebesar -2.250.949,29.
+                    </p>
+                </div>
+            </div>
+        </section>
+            <!-- Portfolio END -->
+            </div>
+        </header>
+         <!-- HEADER END-->
+             <!-- CopyRight -->
+        <footer>
+            <div class="footer-sql">
+                <P>&#169; 2024 - Created by Ridha Miftahul Falah | Portfolio's Website</P>
+            </div>
+        </footer>
+            <!-- CopyRight END -->
+
+        <script src="main.js"></script>
+    </body>
+</html>

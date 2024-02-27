@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ind">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio SQL - Ridha Miftahul Falah</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="main-header">
+                <div class="nav">
+                    <div class="logo">                
+                        <a href="index.html">Ridha Miftahul Falah</a>
+                    </div>
+                        <nav class="navbar">
+                            <ul>
+                              <li><a class="nvb" href="index.html">Home</a></li> 
+                              <li><a class="nvb" href="index.html#Portfolios">Portfolio</a></li>  
+                              <li><a class="nvb" href="index.html#skills">Skills</a></li>
+                              <li><a class="nvb" href="index.html#contact">Contact</a></li>
+                              <li>
+                                <a href="CV - Ridha Miftahul Falah.pdf" target="_blank">
+                                    <button class="cv-btn">Curriculum Vitae</button>
+                                </a>
+                              </li>  
+                            </ul>
+                        </nav>
+                        <div class="burger">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                        </div>
+                </div>
+                <!-- Portfolio Python -->
+                <section id="text">
+                <div class="port-text">
+                    <h3 class="pre-title">My Portfolio</h3>
+                    <h1 class="name-char">Data Visualization</h1>
+                    <p>
+                        Visualisasi data merupakan salah satu aspek krusial dalam pekerjaan seorang data analyst. Dalam konteks ini, 
+                        data visualisasi tidak hanya sekadar membuat grafik atau diagram, ia merupakan kunci untuk mengungkap pola-pola tersembunyi, trend, dan wawasan yang mungkin tidak terlihat saat melihat data mentahnya. 
+                        Sebagai seorang data analyst, kemampuan untuk merancang visualisasi data yang efektif adalah keterampilan yang sangat penting.
+                        Visualisasi data yang baik harus mampu mengomunikasikan informasi dengan jelas dan efisien kepada berbagai pemangku kepentingan. 
+                        Ini melibatkan pemilihan jenis grafik yang tepat sesuai dengan jenis data yang dihadapi, penggunaan warna yang bermakna, dan penyusunan elemen visual yang memudahkan interpretasi. 
+                        Selain itu, penggunaan teknik interaktif juga dapat meningkatkan kemampuan pengguna untuk mengeksplorasi data secara lebih mendalam.
+                        Selain itu, visualisasi data juga dapat digunakan untuk menyajikan temuan analisis dalam cara yang mudah dipahami oleh publik yang lebih luas, 
+                        termasuk mereka yang tidak memiliki latar belakang teknis dalam analisis data. Ini dapat melibatkan pembuatan infografis atau dashboard interaktif 
+                        yang memungkinkan pengguna untuk memahami cerita yang dibangun oleh data dengan cepat dan mudah.
+                        Dengan demikian, bagi seorang data analyst, kemampuan untuk menghasilkan visualisasi data yang efektif dan informatif adalah kunci untuk menjalankan peran mereka dengan sukses, 
+                        baik itu dalam konteks bisnis maupun penelitian.
+                    </p>
+                    &nbsp;
+                    <p>
+                        Kali ini saya akan membahas mengenai final project Python for Data Analyst, dalam project ini saya menggunakan Google Colab,
+                        untuk data menganalisis Data. Dataset yang digunakan adalah df.csv, berikut adalah penjelasan mengenai datasetnya: 
+                    </p>
+                </div>
+                <div class="port-text">
+                    <div class="gambar">
+                    <img src="./Images/Datvis/od.png" alt="Dataset">
+                    <p>1. Dataset Detail</p>
+                    </div>
+                    <p><b>Data Processing</b></p>
+                    <p>
+                        Dalam data processingnya ini menggunakan Looker Studio untuk menampilkan Visualisasi Data terhadap permintaan dari persoalan final project tersebut. 
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Datvis/looker.png" alt="Looker Studio">
+                    <p>2. Looker Studio</p>
+                    </div>
+                    <p>
+                        Mari kita langsung saja ke soal dan data visualisasinya. Berikut ini adalah pengisian Data Visualisasi
+                        menggunakan Looker Studio Halaman 1 dan Halaman 2.
+                    </p>
+                    
+                    <!-- Questions & Answer -->
+                    <br>
+                    <p><b>
+                        Questions & Answer
+                    </b></p>
+                    <!-- HALAMAN 1 -->
+                       <p> Dear Data Analyst,<br>
+                        Menindaklanjuti meeting gabungan kemarin, kami akan membuat suatu dashboard untuk memantau dan mengevaluasi pencapaian penjualan tiap bulannya. 
+                        Dalam dashboard tersebut akan terdiri dari 2 halaman dan dibuat dengan menggunakan lookerstudio.google.com.
+                    </p>
+                    <br>
+                    <p><b> Halaman 1:</b><br>
+                            Dashboard yang berupa:
+                            <br>a. Hubungan antara Value Sales (before discount), Net Profit, dan AOV (average order value).
+                            <br>Note:<br>
+                            - Net profit 	= Value Sales (before discount) - (cogs * qty)<br>
+                            - AOV 		= Value Sales (before discount) / Total Unique Order.  
+                            <br>b. Terdapat slicer Order Date, Category, Sales Value, Value Transaction, Pay ment.
+                            <br>Note:
+                            <br>1. Value Transaction:
+                            <br>- Valid → is_valid = 1
+                            <br>- Not Valid → is_valid = 0
+                            <br>2. Payment → payment_method
+
+                    </p>
+                    <p><b>Nomor 1</b><br>
+                        Tim marketing ingin melihat perkembangan campaign pada tahun 2022, 
+                        trend nya seperti apa? Diberikan penjelasan dan bagaimana call to action-nya agar tim dapat mengambil sebuah keputusan ke depannya.
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Datvis/hal1.png" alt="Halaman 1">
+                    <p>3. Dashboard Halaman 1</p>
+                    </div>
+                    <p>
+                        Pada bulan Januari hingga April terdapat kenaikan yang tidak terlalu signifikan, sedangkan pada bulan Mei hingga Juni terdapat penurunan dan kenaikan
+                        yang masih cenderung stabil, tetapi pada bulan Juli hingga September terjadi kenaikan yang cukup signifikan yang melambung tinggi, sedangkan pada bulan September 
+                        hingga bulan December terjadi penurunan yang sangat signifikan. Dalam trend ini Values Sales nya berada di angka Rp. 5.140.922.080.
+                    </p>
+                    <p>
+                        Untuk Call to Action kepada Tim Marketing saya menyarankan agar pada bulan October, November dan December untuk melakukan discount bulanan dan tahunan,
+                        seperti pada bulan October dan November bisa diberlakukan discount 10.10 dan 11.11 pada bulan tersebut kemungkinan bisa menggunakan
+                        discount yang cukup besar karena menjelang akhir tahun, sedangkan pada bulan December bisa diberlakukan discount 12.12 dan discount akhir tahun ataupun Flash Sales
+                        Akhir tahun dengan tujuan untuk meningkatkan daya tarik konsumen/customer untuk melirik dan meningkatkan penjualan pada tahun kedepannya
+                    </p>
+                </div>
+                <!-- HALAMAN 2 -->
+                <br>
+                <div class="port-text">
+                    <p><b>Halaman 2:</b></p>
+                    <p>Dapat memperlihatkan:<br>
+                        a. Tabel berisi:<br>
+                        - Product Name<br>
+                        - Category<br>
+                        - Before Discount<br>
+                        - After Discount<br>
+                        - Net Profit<br>
+                        - Qty<br>
+                        - Customer (unique value)<br>
+                        b. Terdapat slicer: Order Date, Category, Value Transaction, Payment<br>
+                        c. Scorecard:<br>
+                        - Before Discount<br>
+                        - After Discount<br>
+                        - Net Profit<br>
+                        - Quantity<br>
+                        - Customer (unique value)<br>
+                        - AOV
+                    </p>
+                    <p><b>Nomor 2</b><br>
+                        Selama tahun 2022, tampilkan category Mobiles & Tablets yang sudah terjadi pembayaran secara jazzvoucher. Berapa quantity dan customernya?
+                    </p>
+                    <p><b>Nomor 3</b><br>
+                        Buatlah chart berdasarkan dashboard nomor 2.
+                    </p>
+                    <div class="gambar">
+                    <img src="./Images/Datvis/hal2.png" alt="Halaman 2&3">
+                    <p>4. Dashboard Halaman 2</p>
+                    </div>
+                    <p class="end-text">
+                        Gambar diatas adalah permintaan dari nomor 2 dan 3 yang terdapat pada halaman 2. Pada tahun 2022, category Mobiles & Tablets yang sudah melakukan pembayaran
+                        atau is_valid = 1, terdapat 3 product name yang terjual diantaranya IDROID_BALRX7-Gold, Infinix Hot 4-Gold, dan iPhone7Plus-Red-256GB. Total Net Profit dan
+                        Quantity yang sudah di order yang paling banyak adalah IDROID_BALRX7-Gold Net Profitnya sebesar 67.860.000 dan Quantity Ordernya sebanyak 2.000 qty dengan jumlah
+                        customer 2. Kemudian disusul dengan Infinix Hot 4-Gold dengan Net Profit sebesar 5.921.800 dan Quantity Ordernya 25 qty dengan jumlah customer 1. Pembelian terkecil
+                        terdapat pada product name iPhone7Plus-Red-256GB dengan Net Profit sebesar 1.362.420 dan Quantity Ordernya sebanyak 1 dan jumlah customer yaitu 1. <br>
+                        Kemudian pada Chart yang menunjukkan Net Profit dan Pie Chart yang menunjukkan Average Order Value (AOV). Data diatas di Filter dengan Transaction Value yang Valid
+                        atau dengan kata lain yang sudah melakukan pembayaran.
+                    </p>
+                </div>
+            </div>
+        </section>
+            <!-- Portfolio END -->
+            </div>
+        </header>
+         <!-- HEADER END-->
+             <!-- CopyRight -->
+        <footer>
+            <div class="footer-sql">
+                <P>&#169; 2024 - Created by Ridha Miftahul Falah | Portfolio's Website</P>
+            </div>
+        </footer>
+            <!-- CopyRight END -->
+
+        <script src="main.js"></script>
+    </body>
+</html>
